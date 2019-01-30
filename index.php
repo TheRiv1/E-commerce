@@ -44,9 +44,12 @@
 			</div>
 		</header>
 	</div>
-	<main class="container debug">
-		<div>
+	<main >
+		<div class="container debug">
 
+		<img src="images/main.jpg" alt="" width="100%"> 
+		<img src="images/main.jpg" alt="" width="100%"> 
+		<img src="images/main.jpg" alt="" width="100%"> 
 		<img src="images/main.jpg" alt="" width="100%"> 
 		</div>
 
