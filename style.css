@@ -11,7 +11,7 @@ height: 94px;
 
 /*       */
 .header{
-/*width:100%;*/
+
 height: 94px;
 display:flex;
 justify-content: center;
@@ -24,16 +24,15 @@ body{
 /*           */
 div.header-left{
 flex:1;
-/*width: 284px;*/
 height: 18px;
 margin-top: 25px;
+margin-left: 10px;
 
 }
 
 /*          */
 div.header-center{
 flex:1;
-/*width: 466px;*/
 height: 50px;
 display: flex;
 justify-content: space-between;
@@ -41,7 +40,6 @@ justify-content: space-between;
 
 div.header-right{
 flex:1;
-/*width: 284px;*/
 height: 18px;
 margin-top: 25px;
 text-align: 30px;
@@ -57,23 +55,23 @@ background-color:grey;
 
 .img_logo{
 
-}-
+}
 
 .container{
 	width: 100%;
 	height: 100%;
 }
 
-.women_link a h2 {
-	
-}
+
 
 .women_hp  h2 a{
 text-decoration: none;
 color: black;
 }
 
-.men_link a h2{
+.men_link a {
+font-family: PT Sans Narrow;	
+
 	
 }
 
@@ -81,11 +79,10 @@ color: black;
 text-decoration: none;
 color: black;
 	
-	
 }
 
 .women_hp  h2{
-	font-family: Gotham Narrow;
+	
 	
 }
 
@@ -100,7 +97,7 @@ justify-content: flex-end;
 
 }
 
- img{
+img{
 opacity: 0.5;
 
 }

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Hoodie</title>
+	<title>Webshop Hoodie</title>
 </head>
 <body>
 <div class="headerwrapper debug">
@@ -22,16 +22,20 @@
 			</div>
 
 			<!-- logo middle -->
-			<img class= img_logo src="images/logo.jpg" alt="" width="25%;">
-
+			<img class= img_logo src="images/logo.png" alt="" width="25%;">
+ 
 			<!-- link right -->
 			<div class="women_hp">
 			<h2><a class="women_link" href="">WOMENS</a></h2>
 			</div>
-	</div>
+		</div>
 				<!-- vergrootglas -->
 			<div class="header-right debug">
-				<div class="magnify debug"><a href=""><img src="images/vergrootglas.jpg" alt=""></a>
+				<div class="magnify debug"><a href=""><img src="images/vergrootglas2.png" alt=""></a>
+				</div>
+				<!-- login -->
+				<div class="log_shop">
+					<a href="login.php"><img src="images/login.png" alt=""></a>
 				</div>
 				<!-- winkelwagen -->
 				<div class="cart_shop debug">
@@ -41,7 +45,12 @@
 		</header>
 	</div>
 	<main class="container debug">
-		<img src="images/main.jpg" alt="" width="100%">
+		<div>
+
+		<img src="images/main.jpg" alt="" width="100%"> 
+		</div>
+
+	
 </main>
 
 							<!--  -->
