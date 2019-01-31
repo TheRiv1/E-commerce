@@ -1,8 +1,26 @@
-ody,
+body
+{
+  background-size: 100%;
+  background-color:#e1dddc;
+}
+
+.container{
+  background-color: ;
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.debug{
+   /*border: 2px solid black;*/
+}
+  ody,
 .login-submit,
 .login-submit:before,
 .login-submit:after {
-  background: #373737 url("../img/bg.png") 0 0 repeat;
+background: #373737 url("../img/bg.png") 0 0 repeat;
 }
 
 body {
@@ -62,6 +80,7 @@ input[type="password"]:focus {
   color: white;
   background: rgba(0, 0, 0, 0.1);
   outline: 0;
+  font-family: montserat;
 }
 
 label {
@@ -195,6 +214,9 @@ label {
 }
 
 .inlog{
-  font-family: Trebuchet MS;
+  font-family: Montserrat;
   text-align: center;
+  font-size: 40px;
 }
+
+

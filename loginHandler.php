@@ -16,10 +16,12 @@
         }
         
         echo "welkom " . $firstname;
+
     }
     else 
     {
         echo 'The username or password is incorrect!';
-        //header("location:login.php?et=1;");
+        header("location:login.php?et=1;");
+       // header("location:index.php");
     }
 ?>

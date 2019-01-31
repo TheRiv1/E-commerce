@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +12,8 @@
 <body>
 <div class="container debug">
 	<h1 class="inlog">Login</h1>
-  <form method="POST" action="loginHandler.php" class="login">
+  <form class="login" method="POST" action="loginHandler.php" >
+    
     <p>
       <label for="login">Email:</label>
       <input type="text" name="email" id="login" value="">
