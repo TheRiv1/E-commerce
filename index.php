@@ -16,10 +16,10 @@
 		<input type="image" src="images/hamicon.png" class="openbtn" onclick="openNav()"> 	
 	<div id="mySidepanel" class="sidepanel">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Shirt & Jackets</a>
-  <a href="#">Hoodies & Crewnecks</a>
-  <a href="#">Caps & Beanies</a>
-  <a href="#">Accessories</a>
+  <a href="#"><p>Shirt & Jackets</p></a>
+  <a href="#"><p>Hoodies & Crewnecks</p></a>
+  <a href="#"><p>Caps & Beanies</p></a>
+  <a href="#"><p>Accessories</p></a>
   </div>
 			<!-- <button class="header-icon debug"></button>-->
 	</div> 
@@ -67,15 +67,21 @@
 </main>
 
 <!--            image grid                     -->
-
-<div class="boxblok debug">
-	<div class="img debug">Img1</div>
-	<div class="img debug">Img2</div>
-	<div class="img debug">Img3</div>
-
-	<div class="img debug">Img4</div>
-	<div class="img debug">Img5</div>
-	<div class="img debug">Img6</div>
+<div class="cards debug">
+		 <?php include "card.php"; ?>
 </div>
+
+<footer class="footer">
+	<div class="footer-main">
+		<div class="footer-nav">
+			
+			<a class="footer-navlink" href="">Shipping</a>
+			<a class="footer-navlink" href="">Returns</a>
+			<a class="footer-navlink" href="">Help</a>
+			<a class="footer-navlink" href="">About</a>
+			<a class="footer-navlink" href="">Newsletter</a>
+		</div>
+	</div>
+</footer>
 </body>
 </html>

@@ -1,29 +1,34 @@
 <?php
     include "db_connection.php";        
 
-    $sql_querie = "SELECT Guitar_ID, Guitar_Articlenumber, Guitar_Brand, Guitar_Model, Guitar_Price, Guitar_Img, Guitar_Info FROM guitars";
+    $sql_querie = "SELECT ID, img, name, price  FROM shirts";
     
     $db_result = $conn->query($sql_querie);  
 
     foreach ($db_result as $row)
-    {            
+    {      
+
+      echo '<div class="card debug">' .
+        //link naar guitars.php + foto
+            
+             '<a href="guitars.php?ID=' . $row['ID'] . '">' .
+             '<img src="' . $row['img'] . '" alt="' . $row['name'] . '" style="width: 100%">' .
+             '</a>' .
+             
+             '<h4>' . $row['name']  .'</h4>' .
+             
+             //'<h2 class="price">' .'€'. $row['Price'] .',-'.'</h2>'.
+           // '<a href="guitar_info.php?id=' . $row['Guitar_ID'] . '">' .
+            
+            //'</a>'.
+            '</div>';
+       
+    }       
+ 
+    $conn = null;
+  
+?>       
         
-?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Card</title>
-</head>
-<body>
-	<div class="card">
-  <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Tailored Jeans</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
-  <p><button>Add to Cart</button></p>
-</div>
-</body>
-</html>
+
