@@ -18,8 +18,8 @@ justify-content: center;
 }
 
 body{
-	margin: 0;
-	padding: 0;
+margin: 0;
+padding: 0;
 
 }
 
@@ -93,29 +93,31 @@ color: black;
 display: flex;
 justify-content: flex-end;
 }
-/*---------------------------------------*/
+
 /* The sidepanel menu */
 .sidepanel {
-  height: 250px; /* Specify a height */
+  height: 1000px; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
   background-color: #ffffff; /* White*/
-  overflow-x:  hidden; /* Disable horizontal scroll */
+  overflow-y:hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
 }
 
 /* The sidepanel links */
 .sidepanel a {
+  z-index: 1;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 15px;
   color: black;
   display: block;
   transition: 0.3s;
+  font-family: Trebuchet MS;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -150,22 +152,46 @@ p{
   background-color: #444;
 }
 
-/*---------------------------------------------*/
+        
+/*---------------- card.php -----------------------------*/
+
+.debug{
+/*border:2px solid red;*/
 
 
+}
 
 div.cards{
- display: flex;
-flex: 2;
+
+display: flex;
+justify-content: center;
+justify-content: space-between;
+align-items: center;
+flex: 1;
+flex-wrap: wrap;
+
 
 }
 
 div.card{
-  margin: auto;
-  text-align: center;
+margin: 15px;
+text-align: center;
+max-width: 400px;
+flex-direction: row;
+
+
 }
 
-/*------------------------*/
+.card img{
+width: 100%;
+height: auto;
+  
+}
+/*---------------------------------------*/
+
+
+
+/*--------- footer ---------------*/
 
 .footer{
   height: 100%;

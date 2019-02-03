@@ -2,9 +2,9 @@ body{
   margin: 0;
   padding:0;
   font-family: sans-serif;
-  /*background-color:#e1dddc;*/
-  background-image: url(images/paris.jpg);
-  background-size: cover;
+  background-color: #eeeeee   /*#e1dddc;*/
+  /*background-image: url(images/paris.jpg);*/
+  /*background-size: cover;*/
   z-index: 1;
 }
 
@@ -20,9 +20,9 @@ body{
 }
 
 .registerbox h1{
-  color: white;
+  color: #706166;
   font-size: 40px;
-  border-bottom: 6px solid #0080ff; /*#4caf50;*/
+  border-bottom: 6px solid #706166; /*#4caf50;*/
   margin-bottom: 50px;
   padding: 13px 0;
 }
@@ -33,24 +33,25 @@ body{
   font-size: 20px;
   padding: 8px 0;
   margin:8px 0;
-  border-bottom: 1px solid  #0080ff/*#4caf50*/;
+  border-bottom: 1px solid  #706166/*#4caf50*/;
 }
 
 .textbox input{
 border: none;
 outline: none;
-background: none;
-color: white;
+background:none;
+color:black;
 }
 
-p{
-  color: white;
-}
 
 .register-button{
   width: 100%;
   background: none;
-  border: 2px solid #0080ff;
-  color: white;
+  border: 2px solid #706166;
+  color: #706166;
   font-size: 18px;
+}
+
+a {  
+  color:#706166;
 }

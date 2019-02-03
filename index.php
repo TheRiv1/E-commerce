@@ -16,10 +16,10 @@
 		<input type="image" src="images/hamicon.png" class="openbtn" onclick="openNav()"> 	
 	<div id="mySidepanel" class="sidepanel">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#"><p>Shirt & Jackets</p></a>
+  <a href="jack.php"><p>Shirt & Jackets</p></a>
   <a href="#"><p>Hoodies & Crewnecks</p></a>
   <a href="#"><p>Caps & Beanies</p></a>
-  <a href="#"><p>Accessories</p></a>
+	<a href="#"><p>Accessories</p></a> 
   </div>
 			<!-- <button class="header-icon debug"></button>-->
 	</div> 
@@ -32,7 +32,7 @@
 			</div>
 
 			<!-- logo middle -->
-			<img class= img_logo src="images/logo.png" alt="" width="25%";>
+			<img class= img_logo src="images/reallogo.png" alt="" width="30%";>
  
 			<!-- link right -->
 			<div class="women_hp">
@@ -41,15 +41,20 @@
 		</div>
 				<!-- vergrootglas -->
 			<div class="header-right debug">
-				<div class="magnify debug"><a href=""><img src="images/vergrootglas2.png" alt=""></a>
+				<form  class="form_search debug" action="searchfilter.php"  method="GET">
+				<input class="input_field debug" name="svalue" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for...">
+			</form>
+				<div class="magnify debug"><a href="searchfilter.php"><img src="images/vergrootglas2.png" alt=""></a>
+				
+				
 				</div>
 				<!-- login -->
 				<div class="log_shop">
-					<a href="login.php"><img src="images/login.png" alt=""></a>
+					<a href="login.php"><img src="images/inlog.png" alt=""></a>
 				</div>
 				<!-- winkelwagen -->
 				<div class="cart_shop debug">
-					<a href=""><img src="images/cartshop.png" alt=""></a>
+					<a href="https://rebel8.com/cart"><img src="images/cartshop.png" alt=""></a>
 				</div>
 			</div>
 		</header>
@@ -70,6 +75,18 @@
 <div class="cards debug">
 		 <?php include "card.php"; ?>
 </div>
+
+<div class="jackets">
+	<?php include "jack.php" ?>
+</div>
+
+
+
+
+
+
+
+
 
 <footer class="footer">
 	<div class="footer-main">

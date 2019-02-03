@@ -11,14 +11,15 @@
       echo '<div class="card debug">' .
         //link naar guitars.php + foto
             
-             '<a href="guitars.php?ID=' . $row['ID'] . '">' .
-             '<img src="' . $row['img'] . '" alt="' . $row['name'] . '" style="width: 100%">' .
+             '<a href="searchfilter.php?ID=' . $row['ID'] . '">' .
+             '<img src="' . $row['img'] . '" alt="' . $row['name'] . '" style="width:30%">' .
              '</a>' .
              
-             '<h4>' . $row['name']  .'</h4>' .
+             '<h3>' . $row['name']  .'</h3>' .
              
-             //'<h2 class="price">' .'€'. $row['Price'] .',-'.'</h2>'.
-           // '<a href="guitar_info.php?id=' . $row['Guitar_ID'] . '">' .
+             '<h2 class="price">' .'€'. $row['price'] .',-'.'</h2>'.
+             //'<a href=""> . 'add to cart' .
+           // '<a href=".php?id=' . $row[''] . '">' .
             
             //'</a>'.
             '</div>';
