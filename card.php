@@ -11,8 +11,8 @@
       echo '<div class="card debug">' .
         //link naar guitars.php + foto
             
-             '<a href="searchfilter.php?ID=' . $row['ID'] . '">' .
-             '<img src="' . $row['img'] . '" alt="' . $row['name'] . '" style="width:30%">' .
+             '<a href=".php?ID=' . $row['ID'] . '">' .
+             '<img src="' . $row['img'] . '" alt="' . $row['name'] . '" style="width:100%">' .
              '</a>' .
              
              '<h3>' . $row['name']  .'</h3>' .

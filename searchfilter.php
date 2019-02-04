@@ -5,8 +5,8 @@
 
     include "db_connection.php";        
 
-    $sql_querie = "SELECT ID, img, name, price FROM shirts WHERE name LIKE '%".$searchValue."%'";
-    
+    $sql_querie = "SELECT id, img, name, price FROM jackets WHERE name LIKE '%".$searchValue."%'";
+
     $db_result = $conn->query($sql_querie);  
 
     if($db_result -> rowCount() == 0){
@@ -22,7 +22,7 @@
         echo '<div class="card debug">' .
         //
             
-            '<a href="card.php?ID=' . $row['img']  . '</a>' .
+            '<a href="jack.php?ID=' . $row['img']  . '</a>' .
             '<h1>' . $row['img']  .  '" style="width: 25%">' . ' <h1>' .
             '<h1>' . $row['name'] .'</h1>' .
             '<h2 class="price">' .'€'. $row['price'] .',-'.'</h2>'.

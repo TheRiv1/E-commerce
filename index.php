@@ -44,7 +44,7 @@
 				<form  class="form_search debug" action="searchfilter.php"  method="GET">
 				<input class="input_field debug" name="svalue" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for...">
 			</form>
-				<div class="magnify debug"><a href="searchfilter.php"><img src="images/vergrootglas2.png" alt=""></a>
+				<div class="magnify debug"><a href=""><img src="images/vergrootglas2.png" alt=""></a>
 				
 				
 				</div>
@@ -76,9 +76,6 @@
 		 <?php include "card.php"; ?>
 </div>
 
-<div class="jackets">
-	<?php include "jack.php" ?>
-</div>
 
 
 

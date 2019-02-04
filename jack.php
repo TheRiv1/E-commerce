@@ -22,7 +22,7 @@
       echo '<div class="jack debug">' .
         //link naar guitars.php + foto
             
-             '<a href="searchfilter.php?id=' . $row['id'] . '">' .
+             '<a href="jackinfo.php?id=' . $row['id'] . '">' .
              '<img src="' . $row['img'] . '" alt="' . $row['title'] . '" style="width: 100%">' .
              '</a>' .
              
@@ -42,5 +42,5 @@
 ?>       
  </div>
             
-        </body>
-        </html>       
+       </body>
+        </html>     
