@@ -1,6 +1,4 @@
-
-
-div.jackets{
+div.caps{
 
 display: flex;
 justify-content: center;
@@ -12,7 +10,7 @@ flex-wrap: wrap;
 
 }
 
-div.jack{
+div.cap{
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);	
 margin: 15px;
 text-align: center;
@@ -22,7 +20,7 @@ flex-direction: row;
 
 }
 
-.jack img{
+.cap img{
 width: 100%;
 height: auto;
   

@@ -125,8 +125,8 @@ justify-content: flex-end;
   color: #f1f1f1;
 }
 
-p{
-  font-family: montserat;
+div p{
+ font-family: 'Lato', sans-serif;
 }
 
 /* Position and style the close button (top right corner) */

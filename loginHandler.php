@@ -1,4 +1,7 @@
 <?php
+
+
+
     include "db_connection.php";
     // need email and password for login
     $email = $_POST['email'];//variable email => name="email" from input
@@ -16,7 +19,7 @@
         }
         
         echo "welkom " . $firstname;
-       header('location: index.php');
+        header('location: index.php');
 
     }
     else 

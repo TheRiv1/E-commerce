@@ -3,26 +3,27 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="jacket.css">
-            <title>Shirts & Jackets</title>
+    <link rel="stylesheet" href="hoodie.css">
+            <title></title>
         </head>
         <body>
-    <h1>Shirts & Jackets</h1>
-<div class="jackets debug">
+    <h1>Hoodies & Crew </h1>
+<div class="hoodies debug">
+
 <?php
     include "db_connection.php";        
 
-    $sql_querie = "SELECT id, img, title, price  FROM jackets";
+    $sql_querie = "SELECT id, img, title, price  FROM hoodies";
     
     $db_result = $conn->query($sql_querie);  
 
     foreach ($db_result as $row)
     {      
 
-      echo '<div class="jack debug">' .
-        //link naar guitars.php + foto
+      echo '<div class="hood debug">' .
+        
             
-             '<a href="jackinfo.php?id=' . $row['id'] . '">' .
+             '<a href="hoodieinfo.php?id=' . $row['id'] . '">' .
              '<img src="' . $row['img'] . '" alt="' . $row['title'] . '" style="width: 100%">' .
              '</a>' .
              
@@ -41,6 +42,5 @@
   
 ?>       
  </div>
-            
-       </body>
-        </html>     
+</body>
+</html>     

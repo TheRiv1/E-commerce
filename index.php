@@ -17,8 +17,8 @@
 	<div id="mySidepanel" class="sidepanel">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="jack.php"><p>Shirt & Jackets</p></a>
-  <a href="#"><p>Hoodies & Crewnecks</p></a>
-  <a href="#"><p>Caps & Beanies</p></a>
+  <a href="hoodie.php"><p>Hoodies & Crew</p></a>
+  <a href="cap.php"><p>Caps & Beanies</p></a>
 	<a href="#"><p>Accessories</p></a> 
   </div>
 			<!-- <button class="header-icon debug"></button>-->
@@ -28,11 +28,11 @@
 			<div class="header-center debug">
 				<!-- link left-->
 				<div class="men_hp">
-			<h2><a class="men_link" href="">MENS</a></h2>
+			<h2><a class="men_link" href="jack.php">MENS</a></h2>
 			</div>
 
 			<!-- logo middle -->
-			<img class= img_logo src="images/reallogo.png" alt="" width="30%";>
+			<a href=""><img class= img_logo src="images/reallogo.png" alt="" width="100%";></a>
  
 			<!-- link right -->
 			<div class="women_hp">
@@ -41,10 +41,8 @@
 		</div>
 				<!-- vergrootglas -->
 			<div class="header-right debug">
-				<form  class="form_search debug" action="searchfilter.php"  method="GET">
-				<input class="input_field debug" name="svalue" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for...">
-			</form>
-				<div class="magnify debug"><a href=""><img src="images/vergrootglas2.png" alt=""></a>
+				
+				<div class="magnify debug"><a href="https://rebel8.com/collections/"><img src="images/vergrootglas2.png" alt=""></a>
 				
 				
 				</div>

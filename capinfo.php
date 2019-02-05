@@ -5,14 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="capinfo.css">
 	
-	<title>Jackinfo</title>
+	<title>Capinfo</title>
 </head>
 <body>		
 
 
 <?php
 
-	//jackinfo.php
+	//capinfo.php
 		include "db_connection.php";  
 
 		 
@@ -24,14 +24,14 @@
 		      	$g_id = 1;
 		      }
 
-    $sql_querie = "SELECT id, img, title, price, info FROM jackets WHERE id = '$g_id'";
+    $sql_querie = "SELECT id, img, title, price, info FROM caps WHERE id = '$g_id'";
     
     $db_result = $conn->query($sql_querie);  
 
     foreach ($db_result as $row)
     {            
         echo '<div class="card">'.
-							'<h2>Jackets</h2>'.
+							'<h2>Caps</h2>'.
   								'<img src="' . $row['img'] . '" alt="'  . '" style="width: 80%">' .
   								'<h1>' . $row['title']  . '</h1>' .
   								'<h2 class="prices">' .'€'. $row['price'] .',-'.'</h2>'.
