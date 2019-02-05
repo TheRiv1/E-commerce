@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="jackinfo.css">
+	
 	<title>Jackinfo</title>
 </head>
-<body>
-	
+<body>		
+
+
 <?php
 
 	//jackinfo.php
@@ -28,38 +30,25 @@
 
     foreach ($db_result as $row)
     {            
-        
-        echo '<div class="jacket-single debug">' .
-        						//div left column
-		        			'<div class="img-left debug">' .
-		        			'<img src="' . $row['img'] . '" alt="'  . '" style="width: 50%">' .
-		        				//Brand + Model
-		             		// '<h1>' . $row['']  . ' ' . $row[''] .'</h1>' . 
-
-		             			 //Price
-		             		// '<h2 class="prices">' .'€'. $row[''] .',-'.'</h2>'.  
-
-		             		//Img 
-		             		
-		            	
-		             	//div right column	
-		             '</div>' .
-
-								 '<div class="info-right debug">' .
-				             //Info
-				             '<p>'  .  $row['title'] . '</p>' . 
-				             //price
-				             '<h2 class="prices">' .'€'. $row['price'] .',-'.'</h2>'. 
-				             //button
-				             '<a href="shoppingcart.php">'. '<p>' . '<button class="cart_btn debug">'. 'Add to cart' . '</button>' . '</P>' .
-				              '</a>' .
-				              '<p>' . $row['info'] . '</p>' .
-		             '</div>' .
-             '</div>';
-       
-    }     
+        echo '<div class="card">'.
+							'<h2>Jackets</h2>'.
+  								'<img src="' . $row['img'] . '" alt="'  . '" style="width: 80%">' .
+  								'<h1>' . $row['title']  . '</h1>' .
+  								'<h2 class="prices">' .'€'. $row['price'] .',-'.'</h2>'.
+									'<p>' . $row['info'] . '</p>' .
+									'<a href="orderdetails.php">'. '<p>' . '<button class="cart_btn debug">'. 'Add to cart' . '</button>' . '</P>' .
+									'</a>' .
+						'</div>';
+   }     
    
 	?>
+   
+		
+		  
+
+		
+
+
 
 	</body>
 </html>

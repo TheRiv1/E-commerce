@@ -1,11 +1,7 @@
-<?php 
-
-// include "db_connection.php";  
-
-
+<?php
 //connection to database
   session_start();
-  // $connect = mysqli_connect('localhost','root','','cart');
+  $connect = mysqli_connect('localhost','root','','register');
 
     if(isset($_POST["add_to_cart"]))
     {
@@ -129,4 +125,3 @@
            <br />  
 </body>
 </html>
-

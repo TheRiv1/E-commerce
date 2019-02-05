@@ -54,7 +54,7 @@
 				</div>
 				<!-- winkelwagen -->
 				<div class="cart_shop debug">
-					<a href="https://rebel8.com/cart"><img src="images/cartshop.png" alt=""></a>
+					<a href="orderdetails.php"><img src="images/cartshop.png" alt=""></a>
 				</div>
 			</div>
 		</header>
