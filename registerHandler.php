@@ -1,4 +1,9 @@
 <?php   
+
+
+       
+     
+
         // from input name="" insert in [''];
 
         $firstname = $_POST["fname"];

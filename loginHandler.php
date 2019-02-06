@@ -1,5 +1,6 @@
 <?php
-
+//start session to welcome user after login
+session_start();
 
 
     include "db_connection.php";
@@ -18,15 +19,17 @@
             $firstname = $row['firstname'];
         }
         
-        echo "welkom " . $firstname;
+        // echo "welkom " . ;
+        $_SESSION['firstname']= $firstname;
         header('location: index.php');
+        
 
     }
     else 
-    {
-        echo 'The username or password is incorrect!';
-
-        //header("location:login.php?et=1;");
+    {   
+       echo "incorrect username or password please try again";
+        
+         //header("location:login.php?et=1;");
        // header("location:index.php");
-    }
+   }
 ?>

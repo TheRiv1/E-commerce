@@ -34,10 +34,9 @@
     <p class="login-submit">
       <input class="login-button" type="submit" value="login">
     </p>
-
-    <p class="register-form"><a href="register.php">Registrate here</a></p>
   </form>
-
+    <p class="register-form"><a href="register.php">Registrate here</a></p>
+  
   </div>
 
 </body>

@@ -14,10 +14,8 @@ function search_item() {
     $by_price = $_GET['by_price'];
     $by_size = $_GET['by_size']; 
 
-    $query = "SELECT title, info, img, price FROM jackets";  
-    $query = "SELECT title, info, img, price FROM hoodies"; 
-    $query = "SELECT title, info, img, price FROM caps"; 
-
+    $query = "SELECT title, size, img, price FROM jackets";  
+    
 
     $set_WHERE = false;
 
@@ -60,10 +58,11 @@ function search_item() {
                                 '<img src="' . $row['img'] . '" alt="'  . '" style="width: 50%">' .
                                 '<h1>' . $row['title']  . '</h1>' .
                                 '<h2 class="prices">' .'€'. $row['price'] .',-'.'</h2>'.
-                                    '<p>' . $row['info'] . '</p>' .
+                                    '<p>' . $row['size'] . '</p>' .
                                     '<a href="orderdetails.php">'. '<p>' . '<button class="cart_btn debug">'. 'Add to cart' . '</button>' . '</P>' .
                                     '</a>' .
                         '</div>';
+
         echo '<div class="hood debug">' .
         
             

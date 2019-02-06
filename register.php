@@ -42,7 +42,7 @@
     </p>
 
      <p class="login-submit">
-      <input class="register-button" type="submit" value="Submit">
+      <input class="register-button" name="signup-submit" type="submit" value="Submit">
     </p>
 
     </div>
