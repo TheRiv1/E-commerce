@@ -42,9 +42,7 @@
 				<!-- vergrootglas -->
 			<div class="header-right debug">
 				
-				<div class="magnify debug"><a href="https://rebel8.com/collections/"><img src="images/vergrootglas2.png" alt=""></a>
-				
-				
+				<div class="magnify debug"><a href="searchfilter.php"><img src="images/vergrootglas2.png" alt=""></a>
 				</div>
 				<!-- login -->
 				<div class="log_shop">
