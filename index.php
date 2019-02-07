@@ -39,11 +39,11 @@ echo "<a href='logout.php'><input type= button value=logout name=logout></a>" ;
 			</div>
 
 			<!-- logo middle -->
-			<a href=""><img class= img_logo src="images/reallogo.png" alt="" width="100%";></a>
+			<a href="index.php"><img class= img_logo src="images/reallogo.png" alt="" width="100%";></a>
  
 			<!-- link right -->
 			<div class="women_hp">
-			<h2><a class="women_link" href="">WOMENS</a></h2>
+			<h2><a class="women_link" href="https://rebel8.com/collections/womens">WOMENS</a></h2>
 			</div>
 		</div>
 				<!-- vergrootglas -->
@@ -66,12 +66,8 @@ echo "<a href='logout.php'><input type= button value=logout name=logout></a>" ;
 	<!--           layers                      -->
 	<main >
 		<div class="container debug">
-
-		<img src="images/main2.jpg" alt="" width="100%"> 
-		
+			<img src="images/main2.jpg" alt="" width="100%"> 
 		</div>
-
-	
 </main>
 
 <!--            image grid                     -->
@@ -82,22 +78,19 @@ echo "<a href='logout.php'><input type= button value=logout name=logout></a>" ;
 
 
 
-
-
-
-
-
-
-<footer class="footer">
-	<div class="footer-main">
-		<div class="footer-nav">
+<footer class="footer debug">
+	<div class="footer-main debug">
+		<div class="footer-nav debug ">
 			
-			<a class="footer-navlink" href="">Shipping</a>
-			<a class="footer-navlink" href="">Returns</a>
-			<a class="footer-navlink" href="">Help</a>
-			<a class="footer-navlink" href="">About</a>
-			<a class="footer-navlink" href="">Newsletter</a>
+			<a class="footer-navlink debug" href="">Shipping</a>
+			<a class="footer-navlink debug" href="">Returns</a>
+			<a class="footer-navlink debug" href="">Help</a>
+			<a class="footer-navlink debug" href="">About</a>
+			<a class="footer-navlink debug" href="">Newsletter</a>
 		</div>
+	</div>
+	<div class="footer-bot">
+	&copy; 2019 The Riv &reg; - All rights reserved | Terms of Service | Privacy Policy
 	</div>
 </footer>
 </body>

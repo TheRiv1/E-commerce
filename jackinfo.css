@@ -3,7 +3,13 @@
 */
 }
 
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
 .card {
+  justify-content: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -30,6 +36,18 @@
 
 .card button:hover {
   opacity: 0.7;
+}
+
+.buy_btn{
+  background-color: #706166; 
+  border: none;
+  color: white;
+  margin-top: 250px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px
 }
 
 
