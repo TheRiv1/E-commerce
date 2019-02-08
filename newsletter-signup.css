@@ -4,21 +4,12 @@ body{
 }
 
 .container{
-	width: 280px;
+	width: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-
-.container h1{
-  font-size: 40px;
-  border-bottom: 6px solid #706166; /*#4caf50;*/
-  margin-bottom: 50px;
-  padding: 13px 0;
-
-}
-
 .textbox{
   width: 50%;
   overflow: hidden;
@@ -36,40 +27,22 @@ color: black;
 
 }
 
-h1{
-color: #706166;
-
-}
-
-
-.login-submit{
-	width: 100%;
+.submit-letter{
+	width: 50%;
   background: none;
   /*border: 2px solid #706166;*/
   color: #706166;
   font-size: 18px;
 }
 
-.login-button{
-  width: 100%;
+.submit-letter{
+  width: 50%;
   background: none;
   border: 2px solid #706166;
   color: #706166;
   font-size: 18px;
 }
 
-.registrate-button{
-  width: 100%;
-  background: none;
-  border: 2px solid #706166;
-  color: #706166;
-  font-size: 18px;
+p{
+	color: #706166;
 }
-
-a{
-	text-decoration: none;
-	color: black;
-}
-
-
-

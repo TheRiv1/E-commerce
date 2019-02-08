@@ -107,12 +107,11 @@
                                <h4 class="text-info"><?php echo $row['title'];?></h4>  
                                <h4 class="text-danger">$<?php echo $row['price'];?></h4>  
                                <input type="text" name="quantity" class="form-control" value="1" />
-                            <!-- <input type="hidden" name="hidden_title" value="<?php echo $row['title'] ?>" /> -->
-                           <!-- <input type="hidden" name="hidden_img" value="<?php echo $row['img'];?>"> -->
-                            <!-- <input type="hidden" name="hidden_price" value="<?php echo $row['price'];?>"> -->
+                             <input type="hidden" name="hidden_title" value="<?php echo $row['title'] ?>" /> 
+                           <input type="hidden" name="hidden_img" value="<?php echo $row['img'];?>">
+                          <input type="hidden" name="hidden_price" value="<?php echo $row['price'];?>"> 
 
-
-                               <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />  
+                            <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />  
                           </div>  
                      </form>  
                 </div>  

@@ -8,13 +8,14 @@ if(isset($_GET['by_title'])){
 }
 
 function search_item() {
+
     include "db_connection.php";
 
     $by_title = $_GET['by_title'];
     $by_price = $_GET['by_price'];
     $by_size = $_GET['by_size']; 
 
-    $query = "SELECT img, title, price , size,  FROM jackets";  
+    $query = "SELECT  img, title, price , size  FROM jackets";  
     
 
     $set_WHERE = false;
@@ -47,38 +48,27 @@ function search_item() {
         }
     }
 
-    echo $query;
+    // echo $query;
 
-     $db_result = $conn->query($query);  
+     $db_result = $conn->query($query); 
 
     foreach ($db_result as $row)
     {            
-        echo '<div class="card">'.
-                            '<h2>Jackets</h2>'.
-                                '<img src="' . $row['img'] . '" alt="'  . '" style="width: 50%">' .
-                                '<h1>' . $row['title']  . '</h1>' .
-                                '<h2 class="prices">' .'€'. $row['price'] .',-'.'</h2>'.
-                                    '<p>' . $row['size'] . '</p>' .
-                                    '<a href="orderdetails.php">'. '<p>' . '<button class="cart_btn debug">'. 'Add to cart' . '</button>' . '</P>' .
+        echo 
+        '<div class="wrapper">' .
+        '<div class="card">'.
+                '<h2>Jackets</h2>'.
+                    '<img src="' . $row['img'] . '" alt="'  . '" style="width: 50%">' .
+                     '<h1>' . $row['title']  . '</h1>' .
+                        '<h2 class="prices">' .'€'. $row['price'] .',-'.'</h2>'.
+                          '<p>' . $row['size'] . '</p>' .
+                            '<a href="orderdetails.php">'. '<p>' . '<button class="cart_btn debug">'. 'Add to cart' . '</button>' . '</P>' .
                                     '</a>' .
-                        '</div>';
+            '</div>'.
+        '</div>';
 
-        echo '<div class="hood debug">' .
-        
-            
-             '<a href="hoodieinfo.php?id=' . $row['id'] . '">' .
-             '<img src="' . $row['img'] . '" alt="' . $row['title'] . '" style="width: 100%">' .
-             '</a>' .
-             
-             '<h3>' . $row['title']  .'</h3>' .
-             
-             '<h2 class="price">' .'€'. $row['price'] .',-'.'</h2>'.
-             //'<a href=""> . 'add to cart' .
-           // '<a href=".php?id=' . $row[''] . '">' .
-            
-            //'</a>'.
-            '</div>';
-   }     
+       
+    } 
 }
 ?>
 <!DOCTYPE html>
@@ -89,6 +79,7 @@ function search_item() {
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sidepanel.css">
     <link rel="stylesheet" href="searchfilter.css">
+    <link rel="stylesheet" href="jackinfo.css">
     <script src="sidepanel.js"></script>
 
     <title>Webshop Hoodie</title>
@@ -157,12 +148,12 @@ function search_item() {
         <td><label class="label">Title:</label>
         <div class="textbox"><input type="text" name="by_title" />
         </td>
-    </div>
+        </div>
         <br>
         <td><label class="label">Price:</label>
         <div class="textbox"><input type="text" name="by_price" />
         </td>
-    </div>
+        </div>
         <br>
         
         <td>

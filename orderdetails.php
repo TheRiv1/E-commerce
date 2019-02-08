@@ -14,7 +14,7 @@
           $count = count($_SESSION["shopping_cart"]);
     //get all item detail
             $item_array = array(
-                      'id'       =>   $_GET["id"],
+                      'id'       => $_GET["id"],
                       'img'   =>   $_POST["hidden_img"],
                       'title'     =>   $_POST["hidden_title"],
                       'price'    =>   $_POST['hidden_price'],

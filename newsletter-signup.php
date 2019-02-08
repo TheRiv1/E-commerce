@@ -1,3 +1,24 @@
+<?php 
+
+// Connection to DBase  
+include "db_connection.php";
+
+if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
+  $first_name= $_POST['firstname']; 
+	$last_name= $_POST['lastname']; 
+	$email= $_POST['email']; 
+	$query= "INSERT INTO registrate (`firstname`,`lastname`, `email`) VALUES ('$first_name', '$last_name', '$email')"; 
+	 
+	$db_result = $conn->query($query);
+	 
+	echo 'You have been successfully added.' . '<br>'; 
+}
+
+ 
+?> 
+ 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +26,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="sidepanel.css">
-	<link rel="stylesheet" href="jackinfo.css">
+	<link rel="stylesheet" href="Newsletter-signup.css">
 	<script src="sidepanel.js"></script>
 
 	<title>Webshop Hoodie</title>
@@ -56,55 +77,40 @@
 			</div>
 		</header>
 	</div>
-<body>		
 
+<body>
+	<fieldset> 
+<legend><p>Sign up for Newsletter</p></legend> 
+<form action="Newsletter-signup.php" method="post"> 
+<p> 
+<label>First Name:</label> 
+</p>
+<div class="textbox">
+<input type="text" name="firstname" id="firstname"/>
+</div>
+<br>
+<br>
 
-<?php
+<p>
+<label>Last Name:</label></p>
+<div class="textbox">
+<input type="text" name="lastname" id="lastname"/>
+</div>
+<br>
+<br> 
+<p>
+	<label>Email:</label></p>
+<div class="textbox">
+<input type="text" name="email" id="email"/>
+</div>
+<br>
+<br>
+<div class="submit-letter">
+<input type="submit" name=submit value="Signup"/> 
+</div>
 
-	//jackinfo.php
-		include "db_connection.php";  
-
-		 
-    
-		      if(isset($_GET['id'])){
-
-		      	$g_id = $_GET['id'];
-		      }else{
-		      	$g_id = 1;
-		      }
-
-    $sql_querie = "SELECT id, img, title, price, info FROM jackets WHERE id = '$g_id'";
-    
-    $db_result = $conn->query($sql_querie);  
-
-    foreach ($db_result as $row)
-    {  
-    	 echo '<div class="wrapper">' .
-			'<div class="card">' .
-    	  '<h2>Jackets</h2>'.
-  	 '<img src="' . $row['img'] . '" alt="'  . '" style="width: 80%">' .
-  	 '<h1>' . $row['title']  . '</h1>' .
-  	 '<h2 class="prices">' .'€'. $row['price'] .',-'.'</h2>'.
-		'<p>' . $row['info'] . '</p>' .
-		'<a href="shoppingcart.php">'. '<p>' . '<button name="add_to_cart" class="cart_btn debug">'. 'Add to cart' . '</button>' . '</P>' .
-		 '</a>' .
-		 	'</div>' .
-			'<div>' . 
-			'<a href="checkout.php">'. '<p>' . '<button class="buy_btn debug">'. 'Buy it now' . '</button>' . '</P>' .
-			'</a>' .
-
-			'<div>' .
-			'</div>';
-}     
-   
-	?>
-   
-		
-		  
-
-		
-
-
-
-	</body>
+</form> 
+</fieldset> 
+ 
+</body>
 </html>

@@ -86,7 +86,7 @@ echo "<a href='logout.php'><input type= button value=logout name=logout></a>" ;
 			<a class="footer-navlink debug" href="">Returns</a>
 			<a class="footer-navlink debug" href="">Help</a>
 			<a class="footer-navlink debug" href="">About</a>
-			<a class="footer-navlink debug" href="">Newsletter</a>
+			<a class="footer-navlink debug" href="newsletter-signup.php">Newsletter</a>
 		</div>
 	</div>
 	<div class="footer-bot">
