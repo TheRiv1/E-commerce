@@ -7,7 +7,7 @@
             <title>Shirts & Jackets</title>
         </head>
         <body>
-    <h1>Shirts & Jackets</h1>
+    <h1><a href="index.php">Shirts & Jackets</a></h1>
 <div class="jackets debug">
 <?php
     include "db_connection.php";        

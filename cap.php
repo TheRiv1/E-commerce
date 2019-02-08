@@ -7,7 +7,7 @@
             <title>Caps & Beanies</title>
         </head>
         <body>
-    <h1>Caps & Beanies</h1>
+    <h1><a href="index.php">Caps & Beanies</a></h1>
 <div class="caps debug">
 <?php
     include "db_connection.php";        

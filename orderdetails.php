@@ -92,6 +92,9 @@
                                <th width="15%">Total</th>  
                                <th width="5%">Action</th>  
                           </tr>  
+                            
+
+
                              <?php 
                            if(!empty($_SESSION["shopping_cart"]))
                            {
@@ -123,6 +126,8 @@
                      </table>  
                 </div>  
            </div>  
-           <br />  
+           <br /> 
+            <img src="images/fault.jpg" alt="">
+            <p>Er is helaas iets misgegaan. Probeer het later aub nog een keer.</p> 
 </body>
 </html>

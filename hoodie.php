@@ -7,7 +7,7 @@
             <title></title>
         </head>
         <body>
-    <h1>Hoodies & Crew </h1>
+    <h1><a href="index.php">Hoodies & Crew </a></h1>
 <div class="hoodies debug">
 
 <?php
