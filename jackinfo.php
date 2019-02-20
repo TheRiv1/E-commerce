@@ -73,30 +73,34 @@
 		      	$g_id = 1;
 		      }
 
-    $sql_querie = "SELECT id, img, title, price, info FROM jackets WHERE id = '$g_id'";
+    $sql_querie = "SELECT jackets_id, img, title, price, info FROM jackets WHERE jackets_id = '$g_id'";
     
     $db_result = $conn->query($sql_querie);  
 
     foreach ($db_result as $row)
     {  
-    	 echo '<div class="wrapper">' .
-			'<div class="card">' .
-    	  '<h2>Jackets</h2>'.
-  	 '<img src="' . $row['img'] . '" alt="'  . '" style="width: 80%">' .
-  	 '<h1>' . $row['title']  . '</h1>' .
-  	 '<h2 class="prices">' .'€'. $row['price'] .',-'.'</h2>'.
-		'<p>' . $row['info'] . '</p>' .
-		'<a href="shoppingcart.php">'. '<p>' . '<button name="add_to_cart" class="cart_btn debug">'. 'Add to cart' . '</button>' . '</P>' .
-		 '</a>' .
-		 	'</div>' .
-			'<div>' . 
-			'<a href="checkout.php">'. '<p>' . '<button class="buy_btn debug">'. 'Buy it now' . '</button>' . '</P>' .
-			'</a>' .
+    	 echo  
+    	'<div class="container">'.
+    			'<div class="wrapper">' .
+						'<div class="outer outer1">' .
+							'<div class="content animated fadeInLeft">' .
+								'<span class="bg animated fadeInDown">'. 'EXCLUSIVE' . '</span>'.
+									'<h1 class="font_ji">' . $row['title'] . '<br>'. '€' .$row['price'] . '</h1>' .
+										'<p>' . 'This nylon water resistant windbreaker anorak jacket is coated with a 100% water proof coating' .'</p>' .
 
-			'<div>' .
+												'<div class="button">' .
+											'<a class="cart-btn" href="add_to_cart.php"><i class="cart-icon ion-bag"></i>ADD TO CART</a>' .
+										'</div>' .
+
+									'</div>' .
+								'</div>' .
+							'<div class="outer outer2">' .
+						'<img src="' . $row['img'] . '" alt="'  . '" style="width: 80%" class="animated fadeInRight">' . 
+					'</div>' .
+				'</div>' .
 			'</div>';
-}     
-   
+  
+   }
 	?>
    
 		

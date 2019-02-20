@@ -12,7 +12,7 @@
 <?php
     include "db_connection.php";        
 
-    $sql_querie = "SELECT id, img, title, price  FROM caps";
+    $sql_querie = "SELECT caps_id, img, title, price  FROM caps";
     
     $db_result = $conn->query($sql_querie);  
 
@@ -22,7 +22,7 @@
       echo '<div class="cap debug">' .
         //link naar guitars.php + foto
             
-             '<a href="capinfo.php?id=' . $row['id'] . '">' .
+             '<a href="capinfo.php?caps_id=' . $row['caps_id'] . '">' .
              '<img src="' . $row['img'] . '" alt="' . $row['title'] . '" style="width: 100%">' .
              '</a>' .
              

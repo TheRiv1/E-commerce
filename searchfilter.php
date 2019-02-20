@@ -56,19 +56,19 @@ function search_item() {
     {            
         echo 
         '<div class="wrapper">' .
-        '<div class="card">'.
+             '<div class="card">'.
                 '<h2>Jackets</h2>'.
                     '<img src="' . $row['img'] . '" alt="'  . '" style="width: 50%">' .
                      '<h1>' . $row['title']  . '</h1>' .
                         '<h2 class="prices">' .'€'. $row['price'] .',-'.'</h2>'.
-                          '<p>' . $row['size'] . '</p>' .
-                            '<a href="orderdetails.php">'. '<p>' . '<button class="cart_btn debug">'. 'Add to cart' . '</button>' . '</P>' .
-                                    '</a>' .
+                     '<p>' . $row['size'] . '</p>' .
+                 '<a href="shoppingcart.php">'. '<p>' . '<button class="cart_btn debug">'. 'Add to cart' . '</button>' . '</p>' .
+                '</a>' .
             '</div>'.
         '</div>';
 
        
-    } 
+  }  
 }
 ?>
 <!DOCTYPE html>

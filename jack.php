@@ -12,7 +12,7 @@
 <?php
     include "db_connection.php";        
 
-    $sql_querie = "SELECT id, img, title, price  FROM jackets";
+    $sql_querie = "SELECT jackets_id, img, title, price  FROM jackets";
     
     $db_result = $conn->query($sql_querie);  
 
@@ -22,11 +22,11 @@
       echo '<div class="jack debug">' .
         //link naar guitars.php + foto
             
-             '<a href="jackinfo.php?id=' . $row['id'] . '">' .
+             '<a href="jackinfo.php?jackets_id=' . $row['jackets_id'] . '">' .
              '<img src="' . $row['img'] . '" alt="' . $row['title'] . '" style="width: 100%">' .
              '</a>' .
              
-             '<h3>' . $row['title']  .'</h3>' .
+             '<h3 class="jack-font">' . $row['title']  .'</h3>' .
              
              '<h2 class="price">' .'€'. $row['price'] .',-'.'</h2>'.
              //'<a href=""> . 'add to cart' .

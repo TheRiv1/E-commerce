@@ -106,7 +106,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
 <br>
 <br>
 <div class="submit-letter">
-<input type="submit" name=submit value="Signup"/> 
+<button type="submit" class="btn btn-primary" name=submit value="Signup">signup</button> 
 </div>
 
 </form> 

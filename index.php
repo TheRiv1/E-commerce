@@ -1,9 +1,11 @@
-<?php 
-session_start();
-echo "<h1>Welcome " . $_SESSION['firstname']. "</h1>";
-echo "<a href='logout.php'><input type= button value=logout name=logout></a>" ;
+<!-- <?php 
+// session_start();
 
-?>
+
+// echo "<h1>Welcome " . $_SESSION['firstname']. "</h1>";
+// echo "<a href='logout.php'><input type= button value=logout name=logout></a>" ;
+
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">

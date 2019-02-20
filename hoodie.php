@@ -13,7 +13,7 @@
 <?php
     include "db_connection.php";        
 
-    $sql_querie = "SELECT id, img, title, price  FROM hoodies";
+    $sql_querie = "SELECT hoodies_id, img, title, price  FROM hoodies";
     
     $db_result = $conn->query($sql_querie);  
 
@@ -23,7 +23,7 @@
       echo '<div class="hood debug">' .
         
             
-             '<a href="hoodieinfo.php?id=' . $row['id'] . '">' .
+             '<a href="hoodieinfo.php?hoodies_id=' . $row['hoodies_id'] . '">' .
              '<img src="' . $row['img'] . '" alt="' . $row['title'] . '" style="width: 100%">' .
              '</a>' .
              
